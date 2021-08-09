@@ -14,8 +14,6 @@ export default function MapComponent() {
         fetch(`https://apiv4.updateparishdata.org/Churchs/?lat=${city.lat}&long=${city.lng}&pg=1`)
         .then(res => res.json())
         .then(data => { setChurches(data); setLoading(false); console.log(data); })
-
-        console.log(churches);
     }, [city])
 
     return (
