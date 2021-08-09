@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.App h2 {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  z-index: 10;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search, .church-info {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search select {
+  width: 300px;
+  padding: 10px;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.church-info {
+  z-index: 8;
+  padding: 40px 10px 10px;
+  width: 300px;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  line-height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.church-info span {
+  padding: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.map {
+  width: 100vw;
+  height: 100vh;
 }
